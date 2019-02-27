@@ -17,17 +17,18 @@ const App = (props) => {
     // changeIndex can take a value or function
     // reference. To keep things in sync a function
     // is used
-    changeIndex((currentIndex) => {
+    changeIndex((prevIndex) => {
+      let index = null;
       // Ensure quotes wrap
-      if (currentIndex === numQuotes - 1) {
-        currentIndex = 0;
+      if (prevIndex === numQuotes - 1) {
+        index = 0
       } else {
-        currentIndex = currentIndex + 1
+        index = prevIndex + 1
       }
-      setQuote(quotes[currentIndex])
+      setQuote(quotes[index])
       // Update the value of currentIndex by returning it
       // currentIndex = currentIndex + 1 will not do it!
-      return currentIndex
+      return index
     })    
   }
 

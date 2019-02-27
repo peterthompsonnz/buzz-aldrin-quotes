@@ -1,7 +1,7 @@
 {
-  "name": "buzz aldrin quotes",
+  "name": "buzzaldrinquotes",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
